@@ -4,25 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explicando sobre Links</title>
+  <title>Treinamento de HTML para QAs</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
 <body>
-  <h1>Links</h1>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Treinamento HTML</a>
+    </div>
+  </nav>
 
-  4.1	Links
-4.1.1	Links com “Saiba mais”
-4.1.2	Links sem ação definida
-4.1.3	Links sem nome acessível correto
+  <div class="container mt-5">
+    <h1 class="h1">Link</h1>
+    <p>O elemento HTML <code>link</code> especifica as relações entre o documento atual e um recurso externo. </p>
+   
+    <h2>Links com “Saiba mais”</h2>
 
-  <h2>Links de Saiba mais</h2>
-  <a href="saiba-mais.html">Saiba mais</a>
+    
+    <div class="example example--incorrect">
+        <h3>Exemplo incorreto</h3>
+        <code>
+            <h4>Novo Warcraft chegará para dispositivos móveis em 2022</h4>
+                <br>
+                <p>
+                    A Blizzard Entertainment planeja lançar um título da franquia de games Warcraft para dispositivos móveis em 2022.
+                    <br>
+                <a href="saiba-mais.html">Saiba mais</a>
+            </p>
+        </code>
+    </div>
 
-  <h2>Link sem ação definida</h2>
-  <a href="#">Saiba mais sobre a NTT Data</a>
-
-  <h2>Links sem nome acessível correto</h2>
-  <a href=""></a>
-
-  
+    <div class="example example--correct">
+      <h3>Exemplo correto</h3>
+      <code>
+        <h4>Novo Warcraft chegará para dispositivos móveis em 2022</h4>
+             <br>
+             <p>
+                 A Blizzard Entertainment planeja lançar um título da franquia de games Warcraft para dispositivos móveis em 2022.
+                 <br>
+             <a href="saiba-mais.html">Saiba mais sobre Warcraft mobile</a>
+         </p>
+      </code>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento de HTML para QAs</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Treinamento HTML</a>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 tabindex="-1" focus>Botões, o que são e para que servem?</h1>
+    <p>O Elemento HTML button representa um botão clicável.</p>
+    <p>Categorias de conteúdo Conteúdo de fluxo, conteúdo fraseado, Conteúdo iterativo, listado, rotulável, e elemento enviável  associado a formulário, conteúdo palpável.</p>
+    <br>
+
+    <h2>Tipos de Botões</h2>
+    <p>Existem três categorias de botões no HTML, quais sejam:</p>
+
+    <dl>
+      <dt>submit:</dt>
+      <dd>O botão envia os dados do formulário para o servidor. Esse é o padrão se o atributo não for especifidado, ou se o atributo é dinamicamente mudado para um valor vazio ou inválido.</dd>
+      
+      <dt>reset:</dt>
+      <dd>O botão restaura todos os controles para seus valores iniciais.</dd>
+
+      <dt>button:</dt>
+      <dd>O botão não possui comportamento padrão. Ele pode ter scripts do lado do cliente associado com os eventos do elemento, no qual são acionados quando o evento ocorrer.</dd>
+    </dl>
+
+    <p>Assim, podemos concluir que, as duas primeiras categorias de botões são específicos para uma determinada ação, enquanto a terceira categoria de botão, qual seja, Button ou botão de ação, pode ser adaptado para infinitas ações de acordo com a vontade do programador, como por exemplo: botões de alternância, botões de expandir e recolher ou apenas botões de ação simples.</p>
+    <br>
+
+    <h3> Button ou botões de ação simples</h3>
+    <p> Aqui teremos um botão de ação simples, que o objetivo do mesmo é quando pressionado emita um alerta de boas vindas.</p>
+
+    <ul>
+      <li><button id="acao1"></button></li>
+      <li>
+        <label for="acao2">boas vindas</label>
+        <button id="acao2"></button>
+      </li>
+      <li><span id="acao3" tabindex="0" aria-label="Boas vindas, Botão">Boas vindas</span></li>
+      <li><button id="acao4" aria-label="mensagem de boas vindas">Boas Vindas</button></li>
+      <li><button id="acao5">Boas vindas</button></li>
+    </ul>
+    <br>
+
+    <h3>Botões de alternância</h3>
+    <p>Um botão de alternância é semelhante a uma caixa de seleção porque está selecionado ou não selecionado, e cada botão de alternância pode operar independentemente de todos os outros botões de alternância.<br> Na verdade, uma caixa de seleção pode ser uma alternativa aceitável para um botão de alternância.</p>
+    <br>
+    <p>Aqui teremos um botão de alternância simples, que ao ser ativado ou desativado será emitido um alerta diferente.</p>
+
+    <button id="alternancia1" aria-pressed="false"></button>
+    <span id="demo" aria-live="polite"></span>
+    <br>
+
+    <button id="alternancia2" aria-pressed="false">Liga/desliga</button>
+    <span id="demo1" aria-live="polite"></span>
+    <br>
+
+    <button id="alternancia3">liga/desliga</button>
+    <span id="demo2" aria-live="polite"></span>
+    <br>
+
+    <span id="alternancia4" aria-pressed="false" tabindex="0">liga/desliga</span>
+    <span id="demo3" aria-live="polite"></span>
+    <br>
+
+    <button id="alternancia5" aria-pressed="false">liga/desliga</button>
+    <span id="demo4" aria-live="polite"></span>
+    <br>
+
+    <h3>Outros tipos de botões</h3>
+    <p> Aqui teremos outros botões que para acessibilidade segue os mesmos conceitos e problemas dos botões anteriores e suas respectivas explicações.</p>
+    <ol>
+      <li>
+        <button id="expande" aria-expanded="false">Saiba mais sobre o curso de HTML</button>
+        <p id="curso"></p>
+      </li>
+      <li><button disabled>Saiba mais sobre o curso de HTML</button></li>
+    </ol>
+  </div>
+
+  <script>
+    var bt1 = document.getElementById("acao1");
+    var bt2 = document.getElementById("acao2");
+    var bt3 = document.getElementById("acao3");
+    var bt4 = document.getElementById("acao4");
+    var bt5 = document.getElementById("acao5");
+    var btn1 = document.getElementById("alternancia1");
+    var btn2 = document.getElementById("alternancia2");
+    var btn3 = document.getElementById("alternancia3");
+    var btn4 = document.getElementById("alternancia4");
+    var btn5 = document.getElementById("alternancia5");
+    var botao = document.getElementById("expande");
+    var x
+    bt1.onclick = alerta
+    bt2.onclick = alerta
+    bt3.onclick = alerta
+    bt4.onclick = alerta
+    bt5.onclick = alerta
+    btn1.onclick = status
+    btn2.onclick = status1
+    btn3.onclick = status2
+    btn4.onclick = status3
+    btn5.onclick = status4
+    botao.onclick = expansivel
+
+    function alerta() {
+      alert("Parabéns! Muito legal contar com você no curso.");
+    }
+
+    function status() {
+      if(btn1.getAttribute("aria-pressed") == "false") {
+        btn1.setAttribute("aria-pressed", "true")
+      
+      if(btn1.getAttribute("aria-pressed") == "true") {
+        x="botão ligado!"
+      }
+    } else {
+    btn1.setAttribute("aria-pressed", "false")
+    if(btn1.getAttribute("aria-pressed") == "false") {
+    x="botão desligado!"
+    }
+    }
+    document.getElementById("demo").innerHTML=x;
+    }
+
+    function status1() {
+    if(btn2.getAttribute("aria-pressed") == "false") {
+    btn2.setAttribute("aria-pressed", "true")
+    if(btn2.getAttribute("aria-pressed") == "true") {
+    x="Botão ligado!"
+    }
+    }
+    document.getElementById("demo1").innerHTML=x
+    }
+
+    function status2() {
+    x="botão ligado!"
+    document.getElementById("demo2").innerHTML=x
+    }
+
+    function status3() {
+    if(btn4.getAttribute("aria-pressed") == "false") {
+    btn4.setAttribute("aria-pressed", "true")
+    if(btn4.getAttribute("aria-pressed") == "true") {
+    x="botão ligado!"
+    }
+    } else {
+    btn4.setAttribute("aria-pressed", "false")
+    if(btn4.getAttribute("aria-pressed") == "false") {
+    x="botão desligado!"
+    }
+    }
+    document.getElementById("demo3").innerHTML=x
+    }
+
+    function status4() {
+    if(btn5.getAttribute("aria-pressed") == "false") {
+    btn5.setAttribute("aria-pressed", "true")
+    if(btn5.getAttribute("aria-pressed") == "true") {
+    x="botão ligado!"
+    }
+    } else {
+    btn5.setAttribute("aria-pressed", "false")
+    if(btn5.getAttribute("aria-pressed") == "false") {
+    x="botão desligado!"
+    }
+    }
+    document.getElementById("demo4").innerHTML=x
+    }
+
+    function expansivel() {
+    if(botao.getAttribute("aria-expanded") == "false") {
+    botao.setAttribute("aria-expanded", "true")
+    if(botao.getAttribute("aria-expanded") == "true") {
+    x="O curso HTML Baseado em defeitos de acessibilidade pautados nas regras da WCAG é um curso idealizado pela NTT Data Brasil, aproveitem!"
+    }
+    } else {
+    botao.setAttribute("aria-expanded", "false")
+    if(botao.getAttribute("aria-expanded") == "false") {
+    x=""
+    }
+    }
+    document.getElementById("curso").innerHTML=x
+    }
+  </script>
+</body>
+</html>

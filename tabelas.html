@@ -4,131 +4,112 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <title>Tabelas</title>
-  <style>
-    .complexexample {
-      border-collapse: collapse;
-      border: 1px solid black;
-    }
-
-    .complexexample caption {
-      font-weight: bold;
-      padding: 5px;
-      text-align: center;
-    }
-
-    #date,
-    #schedule, 
-    #location, 
-    #topics1, #date2, #schedule2, #location2, #topics2 {
-      background: #CBD7FE;
-      color: #222A50;
-    }
-
-    .complexexample th, td {
-      border: 1px solid black;
-      padding: 5px;
-    }
-  </style>
+  <title>Treinamento de HTML para QAs</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
 <body>
-  <h1>Tabelas</h1>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Treinamento HTML</a>
+    </div>
+  </nav>
 
-  <h2>Tabela simples</h2>
-  <table>
-    <caption>Lideres tecnicos</caption>
-    <thead>
-      <tr>
-        <th scope="col">Nome</th>
-        <th scope="col">Função</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Marco Telles</td>
-        <td>Lider Técnico</td>
-      </tr>
-      <tr>
-        <td>Joana Silva</td>
-        <td>Team Lead</td>
-      </tr>
-      <tr>
-        <td>Leopoldo Nogueira</td>
-        <td>PO</td>
-      </tr>
-      <tr>
-        <td>Pedro Santos</td>
-        <td>CX</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container mt-5">
+    <h1>Tabelas</h1>
 
-  <h2>Tabelas complexas</h2>
-  <table class="complexexample">
-    <caption><span lang="en">Onboarding</span> de Acessibilidade</caption>
-    <tbody>
-      <tr>
-        <th id="date">Data</th>
-        <th id="schedule">Agenda</th>
-        <th id="location">Localização</th>
-        <th id="topics1">Tópicos</th>
-      </tr>
-      <tr>
-        <th id="monday" rowspan="5">Segunda, 1 de Junho</th>
-        <td headers="schedule monday">9:00 a.m - 10:30 a.m</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Introdução a empresa: Visão e missão</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">10:30 a.m. - 12:00 p.m.</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Políticas de Recursos Humanos</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday" align="center" colspan="5">
-          <strong><em>Almoço de 12:00 às 13:00.</em></strong>
-        </td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">13:00 - 14:30</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Benefícios da empresa</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">15:00 - 16:30</td>
-        <td headers="location monday">RH 005</td>
-        <td headers="topics1 monday">Health and Safety Procedures</td>
-      </tr>
-      <tr>
-        <th id="monday" rowspan="5">Terça, 2 de Junho </th>
-        <td headers="schedule monday">9:00 a.m - 10:30 a.m</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Introdução a empresa: Visão e missão</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">10:30 a.m. - 12:00 p.m.</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Políticas de Recursos Humanos</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday" align="center" colspan="5">
-          <strong><em>Almoço de 12:00 às 13:00.</em></strong>
-        </td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">13:00 - 14:30</td>
-        <td headers="location monday">RH 001</td>
-        <td headers="topics1 monday">Benefícios da empresa</td>
-      </tr>
-      <tr>
-        <td headers="schedule monday">15:00 - 16:30</td>
-        <td headers="location monday">RH 005</td>
-        <td headers="topics1 monday">Health and Safety Procedures</td>
-      </tr>
-    </tbody>
-  </table>
+    <h2>Tabela simples</h2>
+    <table>
+      <caption>Lideres tecnicos</caption>
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Função</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marco Telles</td>
+          <td>Lider Técnico</td>
+        </tr>
+        <tr>
+          <td>Joana Silva</td>
+          <td>Team Lead</td>
+        </tr>
+        <tr>
+          <td>Leopoldo Nogueira</td>
+          <td>PO</td>
+        </tr>
+        <tr>
+          <td>Pedro Santos</td>
+          <td>CX</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Tabelas complexas</h2>
+    <table class="complexexample">
+      <caption><span lang="en">Onboarding</span> de Acessibilidade</caption>
+      <tbody>
+        <tr>
+          <th id="date">Data</th>
+          <th id="schedule">Agenda</th>
+          <th id="location">Localização</th>
+          <th id="topics1">Tópicos</th>
+        </tr>
+        <tr>
+          <th id="monday" rowspan="5">Segunda, 1 de Junho</th>
+          <td headers="schedule monday">9:00 a.m - 10:30 a.m</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Introdução a empresa: Visão e missão</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">10:30 a.m. - 12:00 p.m.</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Políticas de Recursos Humanos</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday" align="center" colspan="5">
+            <strong><em>Almoço de 12:00 às 13:00.</em></strong>
+          </td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">13:00 - 14:30</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Benefícios da empresa</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">15:00 - 16:30</td>
+          <td headers="location monday">RH 005</td>
+          <td headers="topics1 monday">Health and Safety Procedures</td>
+        </tr>
+        <tr>
+          <th id="monday" rowspan="5">Terça, 2 de Junho </th>
+          <td headers="schedule monday">9:00 a.m - 10:30 a.m</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Introdução a empresa: Visão e missão</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">10:30 a.m. - 12:00 p.m.</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Políticas de Recursos Humanos</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday" align="center" colspan="5">
+            <strong><em>Almoço de 12:00 às 13:00.</em></strong>
+          </td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">13:00 - 14:30</td>
+          <td headers="location monday">RH 001</td>
+          <td headers="topics1 monday">Benefícios da empresa</td>
+        </tr>
+        <tr>
+          <td headers="schedule monday">15:00 - 16:30</td>
+          <td headers="location monday">RH 005</td>
+          <td headers="topics1 monday">Health and Safety Procedures</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
