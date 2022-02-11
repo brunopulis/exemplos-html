@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinamento de HTML para QAs</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <title>Links</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/prism.css">
 </head>
 <body>
   <nav class="navbar navbar-dark bg-dark">
@@ -19,33 +21,75 @@
     <p>O elemento HTML <code>link</code> especifica as relações entre o documento atual e um recurso externo. </p>
    
     <h2>Links com “Saiba mais”</h2>
-
-    
-    <div class="example example--incorrect">
-        <h3>Exemplo incorreto</h3>
-        <code>
-            <h4>Novo Warcraft chegará para dispositivos móveis em 2022</h4>
-                <br>
-                <p>
-                    A Blizzard Entertainment planeja lançar um título da franquia de games Warcraft para dispositivos móveis em 2022.
-                    <br>
-                <a href="saiba-mais.html">Saiba mais</a>
-            </p>
+    <h3>Exemplo incorreto</h3>
+    <div class="example">
+      <pre>
+        <code class="language-html">
+          &lt;h4&gt;Novo Warcraft chegar&aacute; para dispositivos m&oacute;veis em 2022&lt;/h4&gt;
+          &lt;p&gt;
+            A Blizzard Entertainment planeja lan&ccedil;ar um t&iacute;tulo da franquia de games Warcraft para dispositivos m&oacute;veis em 2022.
+            &lt;a href=&quot;saiba-mais.html&quot;&gt;Saiba mais&lt;/a&gt;
+          &lt;/p&gt;
         </code>
+      </pre>
     </div>
 
-    <div class="example example--correct">
-      <h3>Exemplo correto</h3>
-      <code>
-        <h4>Novo Warcraft chegará para dispositivos móveis em 2022</h4>
-             <br>
-             <p>
-                 A Blizzard Entertainment planeja lançar um título da franquia de games Warcraft para dispositivos móveis em 2022.
-                 <br>
-             <a href="saiba-mais.html">Saiba mais sobre Warcraft mobile</a>
-         </p>
-      </code>
+    <h3>Exemplo correto</h3>
+    <div class="example">
+      <pre>
+        <code class="language-html">
+          &lt;p&gt;
+            Endere&ccedil;o:
+            Rua Manoel Camargos, 34
+            CEP:&lt;a href=&quot;xpto.html&quot;&gt; 30532-240&lt;/a&gt;
+            Belo Horizonte - MG
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="example">
+      <pre>
+        <code class="language-html">
+          &lt;p&gt;
+            Endere&ccedil;o:
+            Rua Manoel Camargos, 34
+            CEP:&lt;a href=&quot;#&quot;&gt; 30532-240&lt;/a&gt;
+            Belo Horizonte - MG
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </div>
+
+    <h2>Links sem rótulo definido</h2>
+    <h3>Exemplo incorreto</h3>
+    <div class="example">
+      <pre>
+        <code class="language-html">
+          &lt;p&gt;
+            Endere&ccedil;o:
+            Rua Manoel Camargos, 34
+            CEP:&lt;a href=&quot;#&quot;&gt; &lt;/a&gt;
+            Belo Horizonte - MG
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </div>
+
+    <h3>Exemplo correto</h3>
+    <div class="example">
+      <pre>
+        <code class="language-html">
+          &lt;h4&gt;Novo Warcraft chegar&aacute; para dispositivos m&oacute;veis em 2022&lt;/h4&gt;
+          &lt;p&gt;
+            A Blizzard Entertainment planeja lan&ccedil;ar um t&iacute;tulo da franquia de games Warcraft para dispositivos m&oacute;veis em 2022.
+            &lt;a href=&quot;saiba-mais.html&quot;&gt;Saiba mais sobre Warcraft mobile&lt;/a&gt;
+          &lt;/p&gt;
+        </code>
+      </pre>
     </div>
   </div>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/prism.js"></script>
 </body>
 </html>

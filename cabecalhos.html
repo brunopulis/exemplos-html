@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treinamento de HTML para QAs</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/css/prism.css">
 </head>
 <body>
   <nav class="navbar navbar-dark bg-dark">
@@ -14,27 +15,33 @@
     </div>
   </nav>
   
-  <div class="container">
+  <div class="container mt-5">
     <h1 class="h1">Niveis de Cabeçalhos</h1>
     <p>Os elementos HTML <code>h1</code> a <code>h6</code> representam seis níveis de cabeçalhos de seção. <code>h1</code> é o nível de seção mais alto e <code>h6</code> é o mais baixo.</p>
     
     <h2 class="h2">Exemplo incorreto</h2>
     <div class="example example--incorrect">
-      <code>
-        <h1>Cabeçalho de nível um</h1>
-        <h3>Cabeçalho de nível três</h3>
-        <h2>Cabeçalho de nível dois</h2>
-      </code>
+      <pre>
+        <code class="language-html">
+          &lt;h1&gt;Cabe&ccedil;alho de n&iacute;vel um&lt;/h1&gt;
+          &lt;h3&gt;Cabe&ccedil;alho de n&iacute;vel tr&ecirc;s&lt;/h3&gt;
+          &lt;h2&gt;Cabe&ccedil;alho de n&iacute;vel dois&lt;/h2&gt;
+        </code>
+      </pre>
     </div>
 
+    <h2>Exemplo correto</h2>
     <div class="example example--correct">
-      <h2>Exemplo correto</h2>
-      <code>
-        <h1>Cabeçalho de nível um</h1>
-        <h2>Cabeçalho de nível dois</h2>
-        <h3>Cabeçalho de nível três</h3>
-      </code>
+      <pre>
+        <code class="language-html">
+          &lt;h1&gt;Cabe&ccedil;alho de n&iacute;vel um&lt;/h1&gt;
+          &lt;h2&gt;Cabe&ccedil;alho de n&iacute;vel dois&lt;h2&gt;
+          &lt;h3&gt;Cabe&ccedil;alho de n&iacute;vel tr&ecirc;s&lt;/h3&gt;
+        </code>
+      </pre>
     </div>
   </div>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/prism.js"></script>
 </body>
 </html>

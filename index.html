@@ -18,6 +18,7 @@
 
     <ul class="list-unstyled mt-5">
       <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="cabecalhos.html">Cabeçalhos</a></li>
       <li><a href="paragrafos.html">Paragrafos</a></li>
       <li><a href="quebra-linhas.html">Quebra de linhas</a></li>
       <li><a href="estilizacao.html">Estilizaçoes</a></li>
@@ -26,12 +27,32 @@
       <li><a href="select.html">Select</a></li>
       <li><a href="radio.html">Radiobutton</a></li>
       <li><a href="checkbox.html">Checkbox</a></li>
-      <li><a href="botao-alternancia.html">Botao de alternancia</a></li>
       <li><a href="listas.html">Listas</a></li>
       <li><a href="tabelas.html">Tabelas</a></li>
       <li><a href="forms.html">Formularios</a></li>
       <li><a href="wai-aria.html">WAI ARIA</a></li>
     </ul>
   </div>
+
+  <details id="testBed">
+    <summary>With ARIA and JavaScript Support</summary>
+    <p>content…</p>
+  </details>
+
+  <script>
+    //Set up the association between details and summary
+    // $("#testBed>summary").attr("id","testBedButton");
+    let summary = document.querySelector("#testBed>summary").setAttribute("id", "testBedButton");
+    summary.setAttribute("aria-controls", "#testBed");
+    summary.setAttribute("aria-expanded", "false");
+
+    summary.addEventListener("toggle", event => {
+      if(summary.getAttribute("open") === "open")) {
+        this.setAttribute("aria-expanded", "true");
+      } else {
+        this.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
 </body>
 </html>

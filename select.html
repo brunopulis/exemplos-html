@@ -4,14 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinamento de HTML para QAs</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <title> Select </title>
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Treinamento HTML</a>
-    </div>
-  </nav>
+  <h1> Componente de Select</h1>
+<h2>Exemplo Incorreto</h2>
 
-  <div class="container mt-5">
+<div role="menu">
+		<p>Escolha um meio de transporte </p>
+			<li tabindex="0" role="menuitem" value="moto">Motocicleta</li>
+			<li tabindex="0" role="menuitem" value="bike">Bicicleta</li>
+
+	</div>
+
+<h2>Exemplo Correto</h2>
+
+<div>
+	    <label for="zona">Zona de São Paulo</label><br>
+		<select id="zona" name="zona" required="">
+			<option value="">Selecione</option>
+			<option value="centro">Centro</option>
+			<option value="leste">Leste</option>
+			<option value="norte">Norte</option>
+			<option value="oeste">Oeste</option>
+			<option value="sul">Sul</option>
+    	</select>
+    </div>  
+
+ </body>
+</html>
