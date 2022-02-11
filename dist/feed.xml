@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Treinamento de HTML para QAs</title>
+    <subtitle>Treinamento de HTML para QAs</subtitle>
+    <link href="https://eleventastic.netlify.app/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="https://eleventastic.netlify.app" rel="alternate" type="text/html"/>
+    <author>
+        <name>Treinamento de HTML para QAs</name>
+    </author>
+    
+    <updated>2020-04-12T03:00:00Z</updated>
+    
+    <id>https://eleventastic.netlify.app/</id>
+        <entry>
+            <title>An example post.</title>
+            <link href="https://eleventastic.netlify.app/posts/2020-04-12-sample-post/"/>
+            <updated>2020-04-12T03:00:00Z</updated>
+            <id>https://eleventastic.netlify.app/posts/2020-04-12-sample-post/</id>
+            <content type="html"><![CDATA[
+                <p>Lorem Ipsum Dolor.</p>
+
+            ]]></content>
+        </entry></feed>

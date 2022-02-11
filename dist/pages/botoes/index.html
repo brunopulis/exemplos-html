@@ -1,0 +1,108 @@
+<!doctype html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Treinamento HTML - Botões</title><link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"><link rel="stylesheet" href="/assets/styles/main.css"><meta name="description" content="Treinamento de HTML para QAs"><link rel="canonical" href="https://eleventastic.netlify.app/pages/botoes/"><meta property="og:site_name" content="Treinamento HTML - Botões"><meta property="og:title" content="Treinamento HTML - Botões"><meta property="og:description" content="Treinamento de HTML para QAs"><meta property="og:url" content="https://eleventastic.netlify.app/pages/botoes/"><meta property="og:locale" content="pt-br"><meta name="twitter:card" content="summary"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16"><link rel="shortcut icon" href="/assets/images/favicon/favicon.ico"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#1a1a1a"><link type="application/atom+xml" rel="alternate" href="https://eleventastic.netlify.app/feed.xml" title="Treinamento HTML - Botões"></head><body><div style="width: 0; height: 0;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="svg-github" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></symbol></svg></div><a href="#main" class="sr-skip-link">ir para conteúdo</a><div class="layout" role="document"><header class="header" role="banner"><div class="header__inner container"><div class="header__left">🎩 Treinamento de HTML</div><div class="header__right"><nav class="nav js-nav"><ul class="nav__menu js-nav-menu" id="nav-menu"><li class="active"><a href="/">Home</a></li></ul></nav></div></div></header><main id="main" class="main" tabindex="-1"><div class="container"><h1>Botões, o que são e para que servem?</h1><p>O Elemento HTML button representa um botão clicável.</p><p>Categorias de conteúdo Conteúdo de fluxo, conteúdo fraseado, Conteúdo iterativo, listado, rotulável, e elemento enviável associado a formulário, conteúdo palpável.</p><h2>Tipos de Botões</h2><p>Existem três categorias de botões no HTML, quais sejam:</p><dl><dt>submit:</dt><dd>O botão envia os dados do formulário para o servidor. Esse é o padrão se o atributo não for especifidado, ou se o atributo é dinamicamente mudado para um valor vazio ou inválido.</dd><dt>reset:</dt><dd>O botão restaura todos os controles para seus valores iniciais.</dd><dt>button:</dt><dd>O botão não possui comportamento padrão. Ele pode ter scripts do lado do cliente associado com os eventos do elemento, no qual são acionados quando o evento ocorrer.</dd></dl><p>Assim, podemos concluir que, as duas primeiras categorias de botões são específicos para uma determinada ação, enquanto a terceira categoria de botão, qual seja, Button ou botão de ação, pode ser adaptado para infinitas ações de acordo com a vontade do programador, como por exemplo: botões de alternância, botões de expandir e recolher ou apenas botões de ação simples.</p><h3>Button ou botões de ação simples</h3><p>Aqui teremos um botão de ação simples, que o objetivo do mesmo é quando pressionado emita um alerta de boas vindas.</p><ul><li><button id="acao1"></button></li><li><label for="acao2">boas vindas</label> <button id="acao2"></button></li><li><span id="acao3" tabindex="0" aria-label="Boas vindas, Botão">Boas vindas</span></li><li><button id="acao4" aria-label="mensagem de boas vindas">Boas Vindas</button></li><li><button id="acao5">Boas vindas</button></li></ul><h3>Botões de alternância</h3><p>Um botão de alternância é semelhante a uma caixa de seleção porque está selecionado ou não selecionado, e cada botão de alternância pode operar independentemente de todos os outros botões de alternância.<br>Na verdade, uma caixa de seleção pode ser uma alternativa aceitável para um botão de alternância.</p><p>Aqui teremos um botão de alternância simples, que ao ser ativado ou desativado será emitido um alerta diferente.</p><button id="alternancia1" aria-pressed="false"></button> <span id="demo" aria-live="polite"></span> <button id="alternancia2" aria-pressed="false">Liga/desliga</button> <span id="demo1" aria-live="polite"></span> <button id="alternancia3">liga/desliga</button> <span id="demo2" aria-live="polite"></span> <span id="alternancia4" aria-pressed="false" tabindex="0">liga/desliga</span> <span id="demo3" aria-live="polite"></span> <button id="alternancia5" aria-pressed="false">liga/desliga</button> <span id="demo4" aria-live="polite"></span><h3>Outros tipos de botões</h3><p>Aqui teremos outros botões que para acessibilidade segue os mesmos conceitos e problemas dos botões anteriores e suas respectivas explicações.</p><ol><li><button id="expande" aria-expanded="false">Saiba mais sobre o curso de HTML</button><p id="curso"></p></li><li><button disabled="disabled">Saiba mais sobre o curso de HTML</button></li></ol></div><script>var bt1 = document.getElementById("acao1")
+  var bt2 = document.getElementById("acao2")
+  var bt3 = document.getElementById("acao3")
+  var bt4 = document.getElementById("acao4")
+  var bt5 = document.getElementById("acao5")
+  var btn1 = document.getElementById("alternancia1")
+  var btn2 = document.getElementById("alternancia2")
+  var btn3 = document.getElementById("alternancia3")
+  var btn4 = document.getElementById("alternancia4")
+  var btn5 = document.getElementById("alternancia5")
+  var botao = document.getElementById("expande")
+  var message;
+  
+  bt1.onclick = alerta
+  bt2.onclick = alerta
+  bt3.onclick = alerta
+  bt4.onclick = alerta
+  bt5.onclick = alerta
+  btn1.onclick = status
+  btn2.onclick = status1
+  btn3.onclick = status2
+  btn4.onclick = status3
+  btn5.onclick = status4
+  botao.onclick = expansivel
+
+  function alerta() {
+    alert("Parabéns! Muito legal contar com você no curso.")
+  }
+
+  function status() {
+    if(btn1.getAttribute("aria-pressed") == "false") {
+      btn1.setAttribute("aria-pressed", "true")
+
+    if(btn1.getAttribute("aria-pressed") == "true") {
+      message =  "Botão pressionado!"
+    }
+  } else {
+    btn1.setAttribute("aria-pressed", "false")
+
+    if(btn1.getAttribute("aria-pressed") == "false") {
+      message   = "Botão não pressionado!"
+    }
+  }
+
+  document.getElementById("demo").innerHTML = message ; 
+}
+
+  function status1() {
+    if(btn2.getAttribute("aria-pressed") == "false") {
+    btn2.setAttribute("aria-pressed", "true")
+    if(btn2.getAttribute("aria-pressed") == "true") {
+    message = "Botão ligado!"
+    }
+  }
+  
+  document.getElementById("demo1").innerHTML=message 
+}
+
+function status2() {
+message = "botão ligado!"
+document.getElementById("demo2").innerHTML=message 
+ }
+
+function status3() {
+if(btn4.getAttribute("aria-pressed") == "false") {
+btn4.setAttribute("aria-pressed", "true")
+if(btn4.getAttribute("aria-pressed") == "true") {
+x="botão ligado!"
+}
+} else {
+btn4.setAttribute("aria-pressed", "false")
+if(btn4.getAttribute("aria-pressed") == "false") {
+x="botão desligado!"
+}
+}
+document.getElementById("demo3").innerHTML=x
+}
+
+function status4() {
+if(btn5.getAttribute("aria-pressed") == "false") {
+btn5.setAttribute("aria-pressed", "true")
+if(btn5.getAttribute("aria-pressed") == "true") {
+x="botão ligado!"
+}
+} else {
+btn5.setAttribute("aria-pressed", "false")
+if(btn5.getAttribute("aria-pressed") == "false") {
+x="botão desligado!"
+}
+}
+document.getElementById("demo4").innerHTML=x
+}
+
+function expansivel() {
+  if(botao.getAttribute("aria-expanded") == "false") {
+    botao.setAttribute("aria-expanded", "true")
+
+    x = "O curso HTML Baseado em defeitos de acessibilidade pautados nas regras da WCAG é um curso idealizado pela NTT Data Brasil, aproveitem!"
+  } else {
+    botao.setAttribute("aria-expanded", "false")
+
+    x = ""
+  }
+  
+  document.getElementById("curso").innerHTML = x
+}</script></main><footer class="footer" role="contentinfo"><div class="footer__inner container"><span>&copy; copyright 2022</span><p>NTTData</p></div></footer></div><script type="text/javascript" src="/assets/scripts/main.js"></script><script type="text/javascript">if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/serviceworker.js')
+        }</script></body></html>
